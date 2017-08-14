@@ -42,7 +42,7 @@ class Fist(pygame.sprite.Sprite):
     """moves a clenched fist on the screen, following the mouse"""
     def __init__(self):
         pygame.sprite.Sprite.__init__(self) #call Sprite initializer
-        self.image, self.rect = load_image('fist.bmp', -1)
+        self.image, self.rect = load_image('fist2.bmp', -1)
         self.punching = 0
 
     def update(self):
@@ -69,7 +69,7 @@ class Chimp(pygame.sprite.Sprite):
        monkey when it is punched."""
     def __init__(self):
         pygame.sprite.Sprite.__init__(self) #call Sprite intializer
-        self.image, self.rect = load_image('chimp.bmp', -1)
+        self.image, self.rect = load_image('chimp2.bmp', -1)
         screen = pygame.display.get_surface()
         self.area = screen.get_rect()
         self.rect.topleft = 10, 10
@@ -130,7 +130,7 @@ def main():
 #Put Text On The Background, Centered
     if pygame.font:
         font = pygame.font.Font(None, 36)
-        text = font.render("Now with updated sounds!", 1, (10, 10, 10))
+        text = font.render("Cruder than ever!", 1, (10, 10, 10))
         textpos = text.get_rect(centerx=background.get_width()/2)
         background.blit(text, textpos)
 
